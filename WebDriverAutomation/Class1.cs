@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing.Imaging;
 
 namespace WebDriverAutomation
 {
@@ -62,6 +63,25 @@ namespace WebDriverAutomation
 
             popUp.Accept(); //click the OK button
             Assert.True(driver.Title.Contains("Contact"));
+        }
+
+        [Test]
+        public void checkContactPageTitle()
+        {
+            driver.FindElement(By.Id("contact_link")).Click();
+            Assert.True(driver.Title.Contains("Contact"));
+            takeScreenShot("contactPageTestScreenShot");
+        }
+
+        public void takeScreenShot(String filename)
+        {
+            //driver instance
+            ITakesScreenshot screenshotHandler = driver as ITakesScreenshot;
+
+            //save the screenshot
+            Screenshot screenshot = screenshotHandler.GetScreenshot();
+            screenshot.SaveAsFile(filename + ".png", ImageFormat.Png);
+            //The image is saved in the project bin folder
         }
     }
 }
