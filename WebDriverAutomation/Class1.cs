@@ -49,6 +49,19 @@ namespace WebDriverAutomation
             Assert.True(driver.Url.Contains("index"));
         }
 
-        
+        [Test, Description("Open and close Alert PopUp")]
+        public void ShouldOpenCloseAlertPopUpContact()
+        {
+            driver.FindElement(By.Id("contact_link")).Click();
+            Assert.True(driver.Url.Contains("contact"));
+            driver.FindElement(By.Id("submit_message")).Click();
+
+            //current opened alert winow
+            IAlert popUp = driver.SwitchTo().Alert();
+            Assert.True(popUp.Text.Contains("Name field is empty"));
+
+            popUp.Accept(); //click the OK button
+            Assert.True(driver.Title.Contains("Contact"));
+        }
     }
 }
