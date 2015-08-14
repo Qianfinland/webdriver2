@@ -1,0 +1,11 @@
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriverAutomation.dll
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriverAutomation.pdb
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\nunit.framework.dll
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\nunit.framework.xml
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\obj\Debug\WebDriverAutomation.csprojResolveAssemblyReference.cache
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\obj\Debug\WebDriverAutomation.dll
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\obj\Debug\WebDriverAutomation.pdb
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriver.dll
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriver.xml
+C:\Users\Qian.Zhou\Documents\Visual Studio 2013\Projects\SeleniumPractice\WebDriverAutomation\WebDriverAutomation\bin\Debug\WebDriver.Support.xml
