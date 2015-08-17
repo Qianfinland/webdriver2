@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing.Imaging;
+using System.Threading;
+using OpenQA.Selenium.Support.UI;
 
 namespace WebDriverAutomation
 {
@@ -82,6 +84,27 @@ namespace WebDriverAutomation
             Screenshot screenshot = screenshotHandler.GetScreenshot();
             screenshot.SaveAsFile(filename + ".png", ImageFormat.Png);
             //The image is saved in the project bin folder
+        }
+
+
+        [Test]
+        public void ContactPageWaiting()
+        {
+            driver.FindElement(By.Id("contact_link")).Click();
+            //waitOnPage(5);
+            waitPageUntilElementIsVisible(By.Id("contact_link"), 5);
+        }
+
+        public void waitOnPage(int seconds)
+        {
+            Thread.Sleep(seconds * 1000);
+        }
+
+        public IWebElement waitPageUntilElementIsVisible(By locator, int maxSeconds)
+        {
+            return new WebDriverWait(driver, TimeSpan.FromSeconds(maxSeconds))
+                .Until(ExpectedConditions.ElementExists((locator)));
+
         }
     }
 }
